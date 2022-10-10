@@ -46,7 +46,7 @@ class DrivableMap {
         }
         Collection<Drivable> sped = drivable_map.values();
         for (Drivable s : sped){
-            if (s.getMaxSpeed() > speed){
+            if (s.getMaxSpeed() >= speed){
                 return true;
             }
         }
